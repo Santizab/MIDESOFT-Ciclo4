@@ -12,7 +12,7 @@ export class Producto extends Entity {
 
   @property({
     type: 'string',
-    required: true,
+    required: false,
   })
   id_tipo_producto: string;
 
