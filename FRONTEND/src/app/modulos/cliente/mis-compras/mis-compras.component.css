@@ -1,0 +1,20 @@
+*
+{
+  font-family: sans-serif;
+}
+
+#compras a
+{
+  background: #d1df4d;
+  color: #5f656b;
+  padding: none;
+  outline: none;
+  margin: none;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#compras a::placeholder
+{
+  background: linear-gradient(#d1df4d,#fbde3c);
+}
