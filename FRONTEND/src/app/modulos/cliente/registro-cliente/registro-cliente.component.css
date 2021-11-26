@@ -1,0 +1,21 @@
+*
+{
+  font-family: sans-serif;
+}
+
+#registro button[type="submit"]
+{
+  background: #d1df4d;
+  color: #5f656b;
+  padding: none;
+  outline: none;
+  margin: none;
+  cursor: pointer;
+  margin-left: 25%;
+  width: 50%;
+}
+
+#registro button[type="submit"]::placeholder
+{
+  background: linear-gradient(#d1df4d,#fbde3c);
+}
