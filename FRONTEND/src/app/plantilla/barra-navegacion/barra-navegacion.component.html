@@ -7,8 +7,20 @@
     <nav class="menu">
         <div class="nav-wrapper">
           <ul>
-            <li *ngIf ="sesionIniciada">
+            <li>
               <a routerLink="cliente/main-cliente">Clientes</a>
+              <ul>
+                <li *ngIf ="!sesionIniciada">
+                  <a routerLink="cliente/registro-cliente">Registrate!</a>
+                  <a routerLink="cliente/comprar">Comprar</a>
+                </li>
+              </ul>
+              <ul>
+                <li *ngIf ="sesionIniciada">
+                  <a routerLink="cliente/comprar">Comprar</a>
+                  <a routerLink="cliente/mis-compras">Mis Compras</a>
+                </li>
+              </ul>
             </li>
             <li *ngIf ="sesionIniciada">
               <a routerLink="badges">Asesor</a>
@@ -17,10 +29,14 @@
                 </ul>
             </li>
             <li *ngIf ="sesionIniciada">
-              <a routerLink="collapsible">Administrador</a>
+              <a routerLink="admin/main-admin">Administrador</a>
                 <ul>
-                  <li><a routerLink="html/producto.html">Crear producto</a></li>
-                  <li><a routerLink="#">Crear asesor</a></li>
+                  <li><a routerLink="admin/crear-persona">Crear Asesor</a></li>
+                  <li><a routerLink="admin/crear-producto">Crear Producto</a></li>
+                  <li><a routerLink="admin/respuestas">Respuestas</a></li>
+                  <li><a routerLink="admin/solicitudes">Listado</a></li>
+                  <li><a routerLink="admin/asignar-pedido">Asignaciones</a></li>
+                  <li><a routerLink="admin/grafos/main-grafos">Estadisticas</a></li>
                 </ul>
             </li>
             <li *ngIf ="!sesionIniciada">

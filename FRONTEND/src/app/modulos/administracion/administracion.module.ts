@@ -11,6 +11,9 @@ import { BuscarProductoComponent } from './productos/buscar-producto/buscar-prod
 import { EditarProductoComponent } from './productos/editar-producto/editar-producto.component';
 import { EliminarProductoComponent } from './productos/eliminar-producto/eliminar-producto.component';
 import { AsignarPedidoComponent } from './pedidos/asignar-pedido/asignar-pedido.component';
+import { MainAdminComponent } from './main-admin/main-admin.component';
+import { RespuestasComponent } from './personas/respuestas/respuestas.component';
+import { SolicitudesComponent } from './pedidos/solicitudes/solicitudes.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { AsignarPedidoComponent } from './pedidos/asignar-pedido/asignar-pedido.
     BuscarProductoComponent,
     EditarProductoComponent,
     EliminarProductoComponent,
-    AsignarPedidoComponent
+    AsignarPedidoComponent,
+    MainAdminComponent,
+    RespuestasComponent,
+    SolicitudesComponent
   ],
   imports: [
     CommonModule,
