@@ -1,16 +1,18 @@
 
 <div id="container">
     <div id="bg"></div>
-        <form action="" id="login" autocomplete="off">
+        <form [formGroup]="fgValidador" (ngSubmit)="identificarUsuario()" id="login" autocomplete="off">
             <h3 id="title">Ingresa a MIDESOFT</h3>
-            <input type="email" name="" id="correo" placeholder="Alguien@email.com" autocomplete="off"><br>
-            <input type="password" name="" id="password" placeholder="Contraseña"><br><br>
+            <input formControlName="usuario" type="email" name="email" id="correo" placeholder="Alguien@email.com" autocomplete="off"><br>
+            <input formControlName="password" type="password" name="password" id="password" placeholder="Contraseña"><br><br><br><br>
             <div [hidden]="captcha">
-                <re-captcha (resolved)="resolved($event)" siteKey="6LfqDkcdAAAAAM0086-pPTESqR1EaecN_eeJTB45"></re-captcha>
+                <re-captcha (resolved)="resolved($event)" required siteKey="6LfqDkcdAAAAAM0086-pPTESqR1EaecN_eeJTB45"></re-captcha>
             </div>
             <div [hidden]="!captcha">
-                <p>{{ validacion }}</p>
+                <button [disabled]="!fgValidador.valid" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
             </div><br>
-            <input type="submit" value="Login">
+            
         </form>
 </div>

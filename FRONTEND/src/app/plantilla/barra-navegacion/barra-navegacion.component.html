@@ -1,21 +1,36 @@
 
 
-<nav>
-    <div id="bar" class="nav-wrapper">
-      <a href="#!" class="brand-logo">MIDESOFT</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="cliente/main-cliente">Clientes</a></li>
-        <li><a href="badges">Asesor</a></li>
-        <li><a href="collapsible">Administrador</a></li>
-        <li><a href="seguridad/login">Logeate!</a></li>
-      </ul>
+  <header class="encabezado">
+    <div>
+      <a class="logo" href=""><img class="brand-logo" src="https://i.imgur.com/68IwzET.jpg" alt="LOGOMIDESOFT"></a>
     </div>
-  </nav>
+    <nav class="menu">
+        <div class="nav-wrapper">
+          <ul>
+            <li *ngIf ="sesionIniciada">
+              <a routerLink="cliente/main-cliente">Clientes</a>
+            </li>
+            <li *ngIf ="sesionIniciada">
+              <a routerLink="badges">Asesor</a>
+                <ul>
+                  <li><a routerLink="#">Pedido</a></li>
+                </ul>
+            </li>
+            <li *ngIf ="sesionIniciada">
+              <a routerLink="collapsible">Administrador</a>
+                <ul>
+                  <li><a routerLink="html/producto.html">Crear producto</a></li>
+                  <li><a routerLink="#">Crear asesor</a></li>
+                </ul>
+            </li>
+            <li *ngIf ="!sesionIniciada">
+              <a routerLink="seguridad/login">Logeate!</a>
+            </li>
+            <li *ngIf ="sesionIniciada">
+              <a routerLink="seguridad/log-out">Log-Out</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="cliente/main-cliente">Clientes</a></li>
-  <li><a href="badges">Asesor</a></li>
-  <li><a href="collapsible">Administrador</a></li>
-  <li><a href="seguridad/login">Logeate</a></li>
-</ul>
+  </header>

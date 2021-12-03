@@ -5,5 +5,37 @@
 
 #pie
 {
-  background: #1f2f42;
+  background: -moz-linear-gradient(top,  #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
 }
+
+a{
+  text-decoration: none;
+  font-family: "Oswald";
+  font-size: 15px;
+  color: white;
+  padding: 6px 10px;
+  display: block;
+}
+
+a:hover{
+  background: rgba(0,0,0,0.2);
+  color: #EB6D0A;
+  animation: 0.5s tit 1;
+}
+
+@keyframes tit{
+  0%{
+      opacity: 0;
+      transform: scale(1.6);
+  }
+}
+
+
+.footer-copyright{
+  font-size: 10px;
+  
+}
+

@@ -7,8 +7,9 @@ import { BarraNavegacionComponent } from './plantilla/barra-navegacion/barra-nav
 import { PiePaginaComponent } from './plantilla/pie-pagina/pie-pagina.component';
 import { InicioComponent } from './plantilla/inicio/inicio.component';
 import { ErrorPNFComponent } from './plantilla/error-pnf/error-pnf.component';
+import { HttpClientModule } from '@angular/common/http';
 
-import { RecaptchaModule } from "ng-recaptcha";
+import { RecaptchaFormsModule, RecaptchaModule } from "ng-recaptcha";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,8 @@ import { RecaptchaModule } from "ng-recaptcha";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    RecaptchaFormsModule,
     RecaptchaModule
   ],
   providers: [],

@@ -7,18 +7,23 @@ import { CambioClaveComponent } from './cambio-clave/cambio-clave.component';
 import { RecuperarClaveComponent } from './recuperar-clave/recuperar-clave.component';
 
 import { RecaptchaModule } from "ng-recaptcha";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CerrarSesionComponent } from './cerrar-sesion/cerrar-sesion.component';
 
 
 @NgModule({
   declarations: [
     IdentificacionComponent,
     CambioClaveComponent,
-    RecuperarClaveComponent
+    RecuperarClaveComponent,
+    CerrarSesionComponent
   ],
   imports: [
     CommonModule,
     SeguridadRoutingModule,
-    RecaptchaModule
+    RecaptchaModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SeguridadModule { }

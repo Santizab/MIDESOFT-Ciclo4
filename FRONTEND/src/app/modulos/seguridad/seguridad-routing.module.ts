@@ -3,6 +3,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { combineLatestInit } from 'rxjs/internal/observable/combineLatest';
 import { CambioClaveComponent } from './cambio-clave/cambio-clave.component';
+import { CerrarSesionComponent } from './cerrar-sesion/cerrar-sesion.component';
 import { IdentificacionComponent } from './identificacion/identificacion.component';
 import { RecuperarClaveComponent } from './recuperar-clave/recuperar-clave.component';
 
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path:"recuperar-password",
     component:RecuperarClaveComponent
+  },
+  {
+    path:"log-out",
+    component:CerrarSesionComponent
   }
 ];
 

@@ -72,8 +72,9 @@
 
 }
 
-#login input[type="submit"]
+#login button[type="submit"]
 {
+  width: 100%;
   background: #d1df4d;
   color: #5f656b;
   padding: none;
@@ -83,7 +84,14 @@
 
 }
 
-#login input[type="submit"]::placeholder
+#login button[type="submit"]::placeholder
 {
   background: linear-gradient(#d1df4d,#fbde3c);
+}
+
+#error {
+  color: crimson;
+}
+#success {
+  color: green;
 }
