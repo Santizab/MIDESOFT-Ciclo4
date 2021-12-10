@@ -23,9 +23,11 @@
               </ul>
             </li>
             <li *ngIf ="sesionIniciada">
-              <a routerLink="badges">Asesor</a>
+              <a routerLink="pedidos/main-asesor">Asesor</a>
                 <ul>
-                  <li><a routerLink="#">Pedido</a></li>
+                  <li><a routerLink="pedidos/consultar-pedidos-asignados">Ver Pedidos Asignados</a></li>
+                  <li><a routerLink="pedidos/editar-pedidos-asignados">Editar Pedidos Asignados</a></li>
+                  <li><a routerLink="pedidos/buscar-pedidos">Ver Todos los Pedidos</a></li>
                 </ul>
             </li>
             <li *ngIf ="sesionIniciada">
