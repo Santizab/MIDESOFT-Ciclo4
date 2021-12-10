@@ -14,6 +14,7 @@ import { AsignarPedidoComponent } from './pedidos/asignar-pedido/asignar-pedido.
 import { MainAdminComponent } from './main-admin/main-admin.component';
 import { RespuestasComponent } from './personas/respuestas/respuestas.component';
 import { SolicitudesComponent } from './pedidos/solicitudes/solicitudes.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import { SolicitudesComponent } from './pedidos/solicitudes/solicitudes.componen
   ],
   imports: [
     CommonModule,
-    AdministracionRoutingModule
+    AdministracionRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AdministracionModule { }

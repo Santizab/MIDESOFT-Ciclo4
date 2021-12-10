@@ -10,6 +10,7 @@ import { CancelarCompraComponent } from './botones-mis-compras/cancelar-compra/c
 import { EstadoCreditoComponent } from './botones-mis-compras/estado-credito/estado-credito.component';
 import { FacturacionComponent } from './botones-mis-compras/facturacion/facturacion.component';
 import { MainClienteComponent } from './main-cliente/main-cliente.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { MainClienteComponent } from './main-cliente/main-cliente.component';
   ],
   imports: [
     CommonModule,
-    ClienteRoutingModule
+    ClienteRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ClienteModule { }

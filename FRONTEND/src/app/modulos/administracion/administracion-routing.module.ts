@@ -60,11 +60,11 @@ const routes: Routes = [
     component:CrearProductoComponent
   },
   {
-    path:"editar-producto",
+    path:"editar-producto/:id",
     component:EditarProductoComponent
   },
   {
-    path:"eliminar-producto",
+    path:"eliminar-producto/:id",
     component:EliminarProductoComponent
   }
 ];
